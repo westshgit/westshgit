@@ -42,5 +42,5 @@ A **web interface for accessing multiple AI models conveniently**. This project 
 - **Twitter/X:** [West Sheriff](https://x.com/westxsh?t=DVvdTmyCab8TiIHthySCDA&s=09)
 - **Email:** [West Mail](mailto:west.sh.mail@gmail.com)
 
-⚡ I'm always open to discussing new projects, collaborations, and innovative ideas! Feel free to reach out. 🚀
+⚡ I'm always open to discussing new projects, collaborations, Feel free to reach out. 🚀
 
