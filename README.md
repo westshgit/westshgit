@@ -2,12 +2,12 @@
 
 ## 🚀 About Me
 
-I'm a **Backend Engineer** that enjoys BUILDING, i have experience in these language **Rust, Python, and TypeScript**, and apart from backend development, I can also handle frontend tasks when needed.
-🟢 Available for freelance work and collaborations on projects.
+I'm a **Backend Engineer** that enjoys BUILDING, i have experience in these language **Rust, and TypeScript**, and apart from backend development, I can also handle frontend tasks when needed.
+🟢 Available for freelance and collaborations on projects.
 
 💡 **What I do:**
 
-- Backend development with **Rust (Axum and others)**, **Python (Django)**, and **TypeScript (Node.js, Bun)**.
+- Backend development with **Rust (Axum and others)**, and **TypeScript (Node.js, Bun)**.
 - Designing API and Scalable Server's.
 - Building frameworks, developer tools, and automation solutions.
 - Doing **frontend development** when necessary.
@@ -21,18 +21,19 @@ I'm a **Backend Engineer** that enjoys BUILDING, i have experience in these lang
 - Optimizing **AI/ML models** and integrating them into backend services.
 
 💬 **Ask me about:**
-Rust 🦀, TypeScript ⚡,Python 🐍, **Cloud deployment strategies and infrastructure**
+Rust 🦀, TypeScript ⚡, **Cloud deployment strategies and infrastructure**
 
 ## 🔨 Projects
 
-### 🛠️ [Weekend](https://github.com/codetheproject/weekend) (under [theProject](https://github.com/codetheproject))
+### 🛠️ [thestack](https://github.com/codetheproject/thestack) (under [theProject](https://github.com/codetheproject))
 
-A **Rust-powered web framework** designed to provide everything developers need for authentication, scalability, and efficient backend development. The goal is to enable developers to **build projects within a weekend** with minimal setup.
+A **Rust-powered web framework** that allow you to use the best of both world's Rust + Typesctipt.
 
 🔹 **Features:**
 
-- Authentication & Authorization
-- IAM user's management
+- UI Development
+- Server Functions
+- ORM & Database with authentication
 
 ### 🤖 [GPT UI](https://github.com/westshgit/gpt)
 
