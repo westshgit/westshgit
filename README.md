@@ -1,6 +1,8 @@
 # **West Sheriff**
 
-## Cracked **Backend Engineer** **Web 3 Bros**
+### Cracked **Backend Engineer**, **Web 3 Bros**
+
+# RUST IS THE BEST
 
 ## 🔨 Projects
 
