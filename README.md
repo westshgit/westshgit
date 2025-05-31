@@ -1,12 +1,13 @@
 # **West Sheriff**
 
-### Cracked **Backend Engineer**, **Web 3 Bros**
+## Cracked **Backend Engineer**, **Web 3 Bros**
 
-# RUST IS THE BEST
+## RUST IS THE BEST
 
 ## 🔨 Projects
 
 ### 🛠️ [codora](https://github.com/getcodora/codora)
+
 **Rust-powered web framework** that simplify development in Rust
 
 ## 📫 Reach Out
