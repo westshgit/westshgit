@@ -36,9 +36,9 @@ mod error {
     impl IntoResponse for Error {
         fn into_response(self) -> axum::response::Response {
             match self {
-                Error::IO(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
-                Error::Custom(cow) => Json(json!({ "message": cow})).into_response(),
-                Error::SERDE(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
+                | Error::IO(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
+                | Error::Custom(cow) => Json(json!({ "message": cow})).into_response(),
+                | Error::SERDE(_) => StatusCode::INTERNAL_SERVER_ERROR.into_response(),
             }
         }
     }
@@ -82,9 +82,7 @@ struct APIDOC;
     path = "/", 
     responses((status = 200, description = "Handler from the server", body = Handler))
 )]
-// We can set multiple params and responses as well
 async fn handler() -> Json<Handler> {
-    // This is just to test static btw
     static HANDLER: Handler = Handler::new("We got that too!");
 
     Json(HANDLER)
@@ -93,7 +91,9 @@ async fn handler() -> Json<Handler> {
 #[instrument]
 #[utoipa::path(get, path = "get-openapi", responses((status = 200, description = "Get OpenApi", body = String)))]
 async fn openapi_handler() -> Result<String, Error> {
-    APIDOC::openapi().to_json().map_err(Error::from)
+    APIDOC::openapi()
+        .to_json()
+        .map_err(Error::from)
 }
 
 #[tokio::main]
