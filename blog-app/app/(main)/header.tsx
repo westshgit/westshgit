@@ -20,7 +20,7 @@ export default function () {
           <Link target="_blank" href="https://x.com/westxsh" className="flex items-center text-xs gap-0.5">
             <Tweeticon /> (Twitter) Follow Me
           </Link>{" "}
-          <Link target="_blank" href="https://x.com/westxsh" className="flex items-center text-xs gap-0.5">
+          <Link target="_blank" href="mailto:west.sh.mail@gmail.com?subject=Hey%20West%20Sheriff" className="flex items-center text-xs gap-0.5">
             <Mail className="text-red-400" width={16} height={16} />
             Send Email
           </Link>

@@ -1,0 +1,43 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # 2️⃣ Setup Bun
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      # 3️⃣ Install dependencies in subdirectory
+      - name: Install dependencies in blog-app
+        run: bun install
+        working-directory: ./blog-app
+
+      # 4️⃣ Build & export in subdirectory
+      - name: Build static site in blog-app
+        run: |
+          bun run build
+        working-directory: ./blog-app
+
+      # Check that out folder exist
+      - name: List export folder
+        run: ls -la ./out
+        working-directory: ./blog-app
+
+      # 5️⃣ Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./blog-app/out
