@@ -15,18 +15,12 @@
 
 ## 💬 About Me
 
-I’m a software engineer passionate about building and solving business problems.  
-I’m from Nigeria. My first works include **Codora** and [Codora Framework](https://github.com/codetheproject/codora-framework). A platform and framework that help build Rust and other applications faster.  
-It’s also used to build another product, **Jacana**, another project I founded and developed.
+I’m a software engineer, I write code, break things, fix them again. I’m from Nigeria. My current works include **Codora** and [Codora Framework](https://github.com/codetheproject/codora-framework). a platform and framework designed to help developers build Rust and other applications faster. It also powers [Jacana](#), another project I’m currently building and leading.
 
 ## 🚀 Technical Contributions
 
 | Project | Description | Link |
 |----------|--------------|------|
 | 🧩 **Codora Framework** | Open source software to ship Rust application faster | 🔗 [View Project](https://github.com/codetheproject/codora-framework) |
-
-<br />
-
-[Subscribe to my newsletter](https://newsletter.westxsh.com)
 
 ---

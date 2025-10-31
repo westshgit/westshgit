@@ -1,12 +1,25 @@
 import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/dist/shared/lib/constants";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
-  output: "export",
-  basePath: "/westshgit",
-  assetPrefix: "/westshgit",
-  trailingSlash: true,
-};
+export default function (phase: string, { defaultConfig }: { defaultConfig: NextConfig }): NextConfig {
+  //  base next config
+  const nextConfig: NextConfig = {
+    ...defaultConfig,
+    reactCompiler: true,
+    output: "export",
+  };
 
-export default nextConfig;
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return {
+      ...nextConfig,
+      // Add other development config over here
+    };
+  }
+
+  // We can build this dynamically by checking if we are running in CI
+  return {
+    ...nextConfig,
+    basePath: "/westshgit",
+    assetPrefix: "/westshgit",
+  };
+}

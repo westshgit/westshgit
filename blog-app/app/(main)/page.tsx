@@ -1,51 +1,48 @@
 import BlogCard from "@/app/(main)/blog-card";
+import DashedList from "@/app/(main)/dashed-list";
+import ReferenceLink from "@/app/reference-link";
+import { CODORA_FRAMEWORK_LINK } from "@/lib/constant";
 
 export default function () {
   return (
-    <div className="space-y-9 [&_h2]:text-gray-900 [&_h2]:font-bold [&_h2]:text-xl *:space-y-6">
+    <div className="space-y-9 [&_h2]:text-gray-900 dark:[&_h2]:text-gray-50 [&_h2]:font-bold [&_h2]:text-xl *:space-y-6">
       <div>
-        <h2>About Me:</h2>
-        <p className="text-sm text-gray-800">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellat debitis provident nihil ipsa tempora suscipit placeat
-          id vitae. Natus vitae veritatis, excepturi maxime nisi temporibus voluptatem molestiae consectetur sequi. Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. Officiis repellat debitis provident nihil ipsa tempora suscipit placeat id vitae. Natus vitae
-          veritatis, excepturi maxime nisi temporibus voluptatem molestiae consectetur sequi. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Officiis repellat debitis provident nihil ipsa tempora suscipit placeat id vitae. Natus vitae veritatis,
-          excepturi maxime nisi temporibus voluptatem molestiae consectetur sequi.
+        <h2>About Me</h2>
+        <p className="text-sm">
+          I’m a software engineer, I write code, break things, fix them again. I’m from Nigeria. My current work includes{" "}
+          <ReferenceLink href="#">Codora</ReferenceLink> and <ReferenceLink href={CODORA_FRAMEWORK_LINK}>Codora Framework</ReferenceLink> —
+          a platform and framework designed to help developers build Rust and other applications faster. It also powers{" "}
+          <ReferenceLink href="#">Jacana</ReferenceLink>, another project I’m currently building and leading.
         </p>
       </div>
 
       <div>
-        <h2>Technical Contributions:</h2>
-
-        <div>
-          <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum atque consequuntur eaque voluptas totam! Deserunt facere
-            labore placeat quo ab recusandae pariatur architecto aliquam cumque ratione, expedita, eaque consectetur dolore!
-          </p>
-        </div>
+        <h2>Technical Contributions</h2>
+        <ul>
+          <DashedList>
+            <p>
+              I’m developing the <ReferenceLink href={CODORA_FRAMEWORK_LINK}>Codora Framework</ReferenceLink>, an open-source framework for
+              Rust applications.
+            </p>
+          </DashedList>
+        </ul>
       </div>
 
       <div className="pb-10">
-        <h2>Blog:</h2>
-
+        <h2>Blog</h2>
         <div className="space-y-9">
-          <BlogCard title="Codora Framework" description="Open source software for Rust application">
+          <BlogCard
+            blogLink="/"
+            title="Codora & Codora Framework"
+            description="Articles exploring the vision, motivation, and technical roadmap behind Codora and the Codora Framework."
+          >
             {() => (
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellat debitis provident nihil ipsa tempora suscipit
-                placeat id vitae. Natus vitae veritatis, excepturi maxime nisi
+                Discover the motivation and long-term roadmap for Codora — the next big step in building faster, more efficient Rust
+                applications.
               </p>
             )}
           </BlogCard>
-          {/* <BlogCard title="Another Blog" description="Some blog we'nt gonna write">
-            {() => (
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis repellat debitis provident nihil ipsa tempora suscipit
-                placeat id vitae. Natus vitae veritatis, excepturi maxime nisi
-              </p>
-            )}
-          </BlogCard> */}
         </div>
       </div>
     </div>
