@@ -12,7 +12,7 @@ export default function () {
           I’m a software engineer, I write code, break things, fix them again. I’m from Nigeria. My current work includes{" "}
           <ReferenceLink href="#">Codora</ReferenceLink> and <ReferenceLink href={CODORA_FRAMEWORK_LINK}>Codora Framework</ReferenceLink> —
           a platform and framework designed to help developers build Rust and other applications faster. It also powers{" "}
-          <ReferenceLink href="#">Jacana</ReferenceLink>, another project I’m currently building and leading.
+          <ReferenceLink href="#">theProject</ReferenceLink>, another project I’m currently building and leading.
         </p>
       </div>
 
