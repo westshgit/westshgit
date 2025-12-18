@@ -15,12 +15,12 @@
 
 ## 💬 About Me
 
-I’m a software engineer, I write code, break things, fix them again. I’m from Nigeria. My current works include **Codora** and [Codora Framework](https://github.com/codetheproject/codora-framework). a platform and framework designed to help developers build Rust and other applications faster. It also powers [theProject](#), another project I’m currently building and leading.
+I’m a software engineer, I write code, break things, fix them again. I’m from Nigeria. My current works include **Valar** and [Valar](https://github.com/codetheproject/valar). a platform and framework designed to help developers build Rust and other applications faster. It also powers [theProject](#), another project I’m currently building and leading.
 
 ## 🚀 Technical Contributions
 
 | Project | Description | Link |
 |----------|--------------|------|
-| 🧩 **Codora Framework** | Open source software to ship Rust application faster | 🔗 [View Project](https://github.com/codetheproject/codora-framework) |
+| 🧩 **Valar** | Open source software to ship Rust application faster | 🔗 [View Project](https://github.com/codetheproject/valar) |
 
 ---
