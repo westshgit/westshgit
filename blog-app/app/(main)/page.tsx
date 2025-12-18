@@ -33,8 +33,8 @@ export default function () {
         <div className="space-y-9">
           <BlogCard
             blogLink="/"
-            title="Codora & Codora Framework"
-            description="Articles exploring the vision, motivation, and technical roadmap behind Codora and the Codora Framework."
+            title="Codora"
+            description="Articles exploring the vision, motivation, and technical roadmap behind Codora."
           >
             {() => (
               <p>
